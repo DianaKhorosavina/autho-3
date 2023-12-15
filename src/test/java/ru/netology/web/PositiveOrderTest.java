@@ -13,11 +13,6 @@ import static com.codeborne.selenide.Selenide.open;
 public class PositiveOrderTest {
 
     @Test
-    void shouldOpenPage(){
-        open("http://localhost:9999"); //проверяем, что все открывается
-    }
-
-    @Test
     void validFillingOfFormFields() {
         open("http://localhost:9999");
         SelenideElement form = $(By.className("form"));
